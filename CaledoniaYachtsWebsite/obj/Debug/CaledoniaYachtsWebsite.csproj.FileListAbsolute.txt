@@ -72,8 +72,9 @@ C:\Users\CzarnyPotwor\Desktop\C#Projects\ASP.NET_MVC_WebSite\CaledoniaYachtsWebs
 C:\Users\CzarnyPotwor\Desktop\C#Projects\ASP.NET_MVC_WebSite\CaledoniaYachtsWebsite\bin\Newtonsoft.Json.xml
 C:\Users\CzarnyPotwor\Desktop\C#Projects\ASP.NET_MVC_WebSite\CaledoniaYachtsWebsite\bin\Antlr3.Runtime.pdb
 C:\Users\CzarnyPotwor\Desktop\C#Projects\ASP.NET_MVC_WebSite\CaledoniaYachtsWebsite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\CzarnyPotwor\Desktop\C#Projects\ASP.NET_MVC_WebSite\CaledoniaYachtsWebsite\obj\Debug\CaledoniaYachtsWebsite.csprojAssemblyReference.cache
 C:\Users\CzarnyPotwor\Desktop\C#Projects\ASP.NET_MVC_WebSite\CaledoniaYachtsWebsite\obj\Debug\CaledoniaYachtsWebsite.csproj.CoreCompileInputs.cache
 C:\Users\CzarnyPotwor\Desktop\C#Projects\ASP.NET_MVC_WebSite\CaledoniaYachtsWebsite\obj\Debug\CaledoniaYachtsWebsite.csproj.CopyComplete
 C:\Users\CzarnyPotwor\Desktop\C#Projects\ASP.NET_MVC_WebSite\CaledoniaYachtsWebsite\obj\Debug\CaledoniaYachtsWebsite.dll
 C:\Users\CzarnyPotwor\Desktop\C#Projects\ASP.NET_MVC_WebSite\CaledoniaYachtsWebsite\obj\Debug\CaledoniaYachtsWebsite.pdb
+C:\Users\CzarnyPotwor\Desktop\C#Projects\ASP.NET_MVC_WebSite\CaledoniaYachtsWebsite\bin\logo3DModel.gltf
+C:\Users\CzarnyPotwor\Desktop\C#Projects\ASP.NET_MVC_WebSite\CaledoniaYachtsWebsite\obj\Debug\CaledoniaYachtsWebsite.csprojAssemblyReference.cache

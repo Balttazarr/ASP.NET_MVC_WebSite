@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Caledonia Yachts Logo 3D</title>
+</head>
+
+<body>
+
+    <script src="~/Scripts/three.min.js"></script>
+    <script src="~/Scripts/GLTFLoader.js"></script>
+
+
+    <script>
+        let scene, camera, renderer;
+        function init() {
+            scene = new THREE.Scene();
+            scene.background = new THREE.Color(0xdddddd);
+
+            camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 5000);
+
+            hlight = new THREE.AmbientLight(0x404040, 100);
+            scene.add(hlight);
+
+            renderer = new THREE.WebGLRenderer({ antialias: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            document.body.appendChild(renderer.domElement);
+
+            let loader = new THREE.GLTFLoader();
+            loader.load('logo3DModel.gltf', function (gltf)
+            {
+                scene.load(gltf.scene);
+                renderer.render(scene, camera);
+            });
+            
+            init();
+        }
+    </script>
+
+
+</body>
+</html>

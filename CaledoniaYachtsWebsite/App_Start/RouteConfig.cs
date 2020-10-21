@@ -13,10 +13,16 @@ namespace CaledoniaYachtsWebsite
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            //routes.MapRoute(
+            //    name: "LogoStart",                              
+            //    url: "{controller}/{action}/{id}",
+            //    defaults: new { controller = "Home", action = "Model3D" }  
+
+            //);
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Home", action = "Model3D", id = UrlParameter.Optional }
             );
         }
     }
