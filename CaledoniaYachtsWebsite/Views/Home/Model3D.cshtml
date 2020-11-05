@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@{
+    ViewBag.Title = "Logo Model";
+}
+
+
+
 <html lang="pl">
 <head>
     <meta charset="utf-8">
@@ -6,37 +11,34 @@
 </head>
 
 <body>
+    <div>
+        <script src="~/Scripts/three.js"></script>
+        <script src="~/Scripts/GLTFLoader.js"></script>
 
-    <script src="~/Scripts/three.min.js"></script>
-    <script src="~/Scripts/GLTFLoader.js"></script>
-
-
-    <script>
-        let scene, camera, renderer;
-        function init() {
-            scene = new THREE.Scene();
-            scene.background = new THREE.Color(0xdddddd);
-
-            camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 5000);
-
-            hlight = new THREE.AmbientLight(0x404040, 100);
-            scene.add(hlight);
-
-            renderer = new THREE.WebGLRenderer({ antialias: true });
-            renderer.setSize(window.innerWidth, window.innerHeight);
-            document.body.appendChild(renderer.domElement);
-
-            let loader = new THREE.GLTFLoader();
-            loader.load('logo3DModel.gltf', function (gltf)
+        <script type="text/javascript">
+            let scene, camera, renderer;
+            function init()
             {
-                scene.load(gltf.scene);
-                renderer.render(scene, camera);
-            });
-            
+                scene = new THREE.Scene();
+                scene.background = new THREE.Color(0xdddddd);
+
+                camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 1, 5000);
+                camera.rotation.y = 45 / 180 * Math.PI;
+
+                hlight = new THREE.AmbientLight(0x404040, 100);
+                scene.add(hlight);
+
+                renderer = new THREE.WebGLRenderer({ antialias: true });
+                renderer.setSize(window.innerWidth, window.innerHeight);
+                document.body.appendChild(renderer.domElement);
+
+                let loader = new THREE.GLTFLoader();
+                loader.load('scene.gltf', function (gltf) {
+                    scene.load(gltf.scene);
+                    renderer.render(scene, camera);
+                });
+            }
             init();
-        }
-    </script>
-
-
+        </script>
+    </div>
 </body>
-</html>

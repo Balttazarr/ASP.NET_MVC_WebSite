@@ -20,8 +20,7 @@
         </div>
         <div class="collape navbar-collapse collapse-navbar collapse" id="navbarSupportedContent">
             <ul class="nav navbar-nav">
-                <li class="nav-item">@Html.ActionLink("Witamy", "Index", "Home")</li>
-                <li class="nav-item">@Html.ActionLink("O firmie", "About", "Home")</li>
+                <li class="nav-item"> @Html.ActionLink("O firmie", "About", "Home")</li>
                 <li class="nav-item">@Html.ActionLink("Kontakt", "Kontakt", "Home")</li>
                 <li class="nav-item">@Html.ActionLink("Oferta", "Oferta", "Home")</li>
                 <li class="nav-item">@Html.ActionLink("Realizacje", "Realizacje", "Home")</li>
@@ -33,14 +32,22 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Caledonia Yachts</p>
-            <p class="pull-right">By Balttazarr</p>
-        </footer>
+        <div class="row">
+            <footer>
+                <div class="col-md-6">
+                    <p>&copy; @DateTime.Now.Year - Caledonia Yachts</p>
+                </div>
+                <div class="col-md-offset-6">
+                    <p class="pull-right">By Balttazarr</p>
+                </div>
+            </footer>
+        </div>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/three")
+    @Scripts.Render("~/bundles/GLTFLoader")
     @RenderSection("scripts", required: false)
 </body>
 </html>

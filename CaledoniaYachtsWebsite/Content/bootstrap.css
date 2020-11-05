@@ -8330,4 +8330,12 @@ button.close {
         display: none !important;
     }
 }
+
+.text-truncate {
+    display: inline-block;
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 /*# sourceMappingURL=bootstrap.css.map */

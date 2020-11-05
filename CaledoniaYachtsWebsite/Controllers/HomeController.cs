@@ -20,14 +20,14 @@ namespace CaledoniaYachtsWebsite.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "O stronie i twórcy po krótce.";
 
             return View();
         }
 
         public ActionResult Kontakt()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Zachęcamy do kontaktu w godzinach 6-18 czy coś.";
 
             return View();
         }
@@ -39,6 +39,7 @@ namespace CaledoniaYachtsWebsite.Controllers
 
         public ActionResult Realizacje()
         {
+            ViewBag.Message = "Na tej stronie znajdują się moje wybrane realizacje.";
             return View();
         }
         public ActionResult Historia()
