@@ -3,8 +3,6 @@
 }
 
 
-
-<html lang="pl">
 <head>
     <meta charset="utf-8">
     <title>Caledonia Yachts Logo 3D</title>
@@ -15,7 +13,7 @@
         <script src="~/Scripts/three.js"></script>
         <script src="~/Scripts/GLTFLoader.js"></script>
 
-        <script type="text/javascript">
+        <script>
             let scene, camera, renderer;
             function init()
             {
@@ -33,7 +31,7 @@
                 document.body.appendChild(renderer.domElement);
 
                 let loader = new THREE.GLTFLoader();
-                loader.load('scene.gltf', function (gltf) {
+                loader.load('CYLogo.gltf', function (gltf) {
                     scene.load(gltf.scene);
                     renderer.render(scene, camera);
                 });

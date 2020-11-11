@@ -4,6 +4,7 @@
 <br />
 <br />
 
+
 @*<div class="alert alert-danger" role="alert">
         <button type="button" class="close" data-dismiss="alert">
             x
@@ -12,44 +13,59 @@
     </div>*@
 <div class="jumbotron">
     <div class="container">
-        <h1>Witamy na Caledonia Yachts</h1>
+        <h1><kbd>Witamy na Caledonia Yachts</kbd></h1>
         <p class="lead">Firma skoncetrowana na budowaniu, przerabianiu i wymyślaniu rozwiązań jachtowych.</p>
         <p>"Nie ma czegoś takiego jak - nie da się."</p>
+        <p class="dark-green-ic">Logo w navbar do poprawy</p>
         <p>
             <a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a>
             <button class="btn btn-success btn-lg pull-right visible-lg"> Large Layout</button>
             <button class="btn btn-warning btn-lg pull-right visible-md"> Medium Layout</button>
             <button class="btn btn-danger btn-lg pull-right visible-sm"> Small Layout</button>
-            <button class="btn btn-default btn-lg pull-right visible-xs"> Extra Large Layout</button>
+            <button class="btn btn-default btn-lg pull-right visible-xs"> Extra Small Layout</button>
         </p>
     </div>
 </div>
 <div class="row">
     <div class="col-md-12">
-        <button class="btn btn-danger">Nie klikać!</button>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        @*<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>*@
+        <script>
+            $(document).ready(function () {
+                // This is to overwrite the boostrap default and show it allways
+                $('#myPopUp').popover();
+                // This is to destroy the popover when you click the title
+                $('.popover-title').click(function () {
+                    $('#myPopUp').popover('destroy');
+                });
+            });
+        </script>
+        <button class="btn btn-danger" id="myPopUp" data-toggle="popover" data-placement="top" data-content="hasło to okoń">Nie klikać!</button>
     </div>
 </div>
 <div class="row">
-    <div class="col-md-3">
+    <div class="col-md-3 panel">
         <h2>Getting started</h2>
         <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+            <mark>
+                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+                enables a clean separation of concerns and gives you full control over markup
+                for enjoyable, agile development.
+            </mark>
         </p>
         <p><a class="btn btn-info btn-xs" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-3 panel">
         <h2>Get more libraries</h2>
         <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
         <p><a class="btn btn-primary" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-3 panel">
         <h2>Web Hosting</h2>
         <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
         <p><a class="btn btn-danger btn-lg" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-3 panel">
         <h2>Test grid</h2>
         <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
         <p><a class="btn btn-warning" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
@@ -57,10 +73,10 @@
 </div>
 
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 col-xs-1 col-ms-1">
         <table class="table table-bordered table-striped table-hover">
             <thead>
-                <tr>
+                <tr class="mdb-color white-text">
                     <th>Icons</th>
                     <th>First</th>
                     <th>LastName</th>
@@ -96,3 +112,7 @@
         </table>
     </div>
 </div>
+
+
+
+

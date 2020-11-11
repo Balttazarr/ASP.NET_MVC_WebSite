@@ -24,9 +24,11 @@ namespace CaledoniaYachtsWebsite
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                     "~/Content/bootstrap.css",
+                     "~/Content/mdb.css",
                      "~/Content/navbar-side.css",
                       "~/Content/fontawesome.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css"
+                      ));
         }
     }
 }

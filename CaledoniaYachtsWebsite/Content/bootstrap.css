@@ -5382,6 +5382,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     padding: 15px 15px;
     font-size: 18px;
     line-height: 20px;
+    image-rendering: optimizeQuality;
 }
 
     .navbar-brand:hover,
@@ -8332,10 +8333,29 @@ button.close {
 }
 
 .text-truncate {
-    display: inline-block;
-    max-width: 150px;
+    display:inline-block;
+    max-width: 250px;
     white-space: nowrap;
-    overflow: hidden;
+    overflow:scroll;
     text-overflow: ellipsis;
 }
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+.popover-title {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    text-align: right;
+}
+/*.bg {*/
+    /* The image used */
+    /*background-image: url("/Photos/bgImage.jpg");*/
+    /* Full height */
+    /*height: 100%;*/
+    /* Center and scale the image nicely */
+    /*background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
 /*# sourceMappingURL=bootstrap.css.map */
